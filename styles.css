@@ -1,0 +1,51 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: lightgray;
+}
+
+
+.drag-item {
+	text-align: center;
+}
+
+.drag-item img{
+	height: 150px;
+	width: 150px;
+}
+
+
+.drag-card{
+	border: 5px solid chartreuse;
+	border-radius: 10px;
+	background-color: lightslategray;
+	margin-top: 5px;
+	padding: 1px;
+	height: 250px;
+	width: 300px;
+	position: relative;
+}
+
+.drag-card .item {
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	background-size: cover;
+	background-position: center;
+}
+
+.drag-card.hovered {
+	border: 5px dashed chartreuse;
+}
+
+#close {
+    position: absolute;
+    background: red;
+    color: white;
+    top: -10px;
+    right: -10px;
+}
+
+.display-none {
+	display: none;
+}
