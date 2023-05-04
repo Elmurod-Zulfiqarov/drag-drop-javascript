@@ -8,20 +8,22 @@ dragItems.forEach((item) => {
 	});
 });
 
-
-
 dragCards.forEach((card) => {
 
 	let closeBtn = card.querySelector('#close');
 
 	card.addEventListener('dragstart', (e) => {
-		dragImg = e.target;
+		if (e.target.tagName === 'IMG'){
+			dragImg = e.target;
+		} else {
+			e.preventDefault();
+		}
 	});
 	card.addEventListener('dragover', (e) => {
 		card.classList.add("hovered")
 	});
 	card.addEventListener('dragleave', (e) => {
-		if (card.children.length === 1) {
+		if (!card.querySelector('.item')) {
 			card.appendChild(dragImg);
 		}
 		card.classList.remove("hovered");
