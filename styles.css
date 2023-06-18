@@ -1,9 +1,18 @@
 body {
-	padding: 0;
-	margin: 0;
-	background-color: lightgray;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
 }
 
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #666;
+}
+
+section {
+	min-height: 100vmin;
+}
 
 .drag-item {
 	text-align: center;
@@ -12,6 +21,12 @@ body {
 .drag-item img{
 	height: 150px;
 	width: 150px;
+}
+
+#dragCards {
+	height: 95%;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 
@@ -48,4 +63,8 @@ body {
 
 .display-none {
 	display: none;
+}
+
+footer {
+	width: 100vw;
 }
